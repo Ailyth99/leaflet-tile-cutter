@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import filedialog,messagebox,ttk
 from tkinter.ttk import Combobox
+from tkinter import Tk, PhotoImage
 from PIL import Image
 import math,os
 
@@ -9,8 +10,7 @@ class CutterGUI:
     def __init__(self, master):
         self.master = master
         master.title("LeafletTileCutter")
-
-        
+        master.iconphoto(master._w, PhotoImage(file="ico.png"))
         master.grid_columnconfigure(0, weight=1)
         master.grid_columnconfigure(1, weight=1)
         master.grid_columnconfigure(2, weight=1)
